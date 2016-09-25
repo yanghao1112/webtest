@@ -1,14 +1,43 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="phonecatApp">
   <head>
     <meta charset="utf-8">
     <title>My HTML File</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <script src="bower_components/angular/angular.js"></script>
+	<script src="app.js"></script>
+	<script src="phone-list.component.js"></script>
   </head>
+  <!--
+  <body ng-controller="PhoneListController">
+  -->
   <body>
-
     <p>Nothing here {{'yet' + '!'}}</p>
-
+	<p>1 + 2 = {{1 + 2}}</p>
+	<ul>
+	<!--
+		<li>
+			<span>Nexus S</span>
+			<p>
+				Fast just got faster with Nexus S
+			</p>
+		</li>
+		<li>
+			<span>Motorola X00M with Wi-Fi</span>
+			<p>
+				The Next, Next Generation tablet.
+			</p>
+		</li>
+	-->
+	<!-- No.2
+		<li ng-repeat="phone in phones">
+			<span>{{phone.name}}</span>
+			<p>{{phone.snippet}}</p>
+		</li>
+	-->
+	</ul>
+	
+	<phone-list></phone-list>
+	<p>Total Number of Phone: 2</p>
   </body>
 </html>
